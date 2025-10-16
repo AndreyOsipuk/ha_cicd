@@ -4,11 +4,7 @@ name: Auto publish on GH Pages
 on:
     push:
         branches: [ "master" ]
-        paths: # action will run only if changes paths below
-            - "src/**"
-            - ".github/workflows/**"
-    workflow_dispatch: # to allow run action via github interface
-
+        
 permissions:
     contents: read
     pages: write
